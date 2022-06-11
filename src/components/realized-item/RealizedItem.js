@@ -10,7 +10,7 @@ function RealizedItem(data) {
         This is a normal test task
       </p>
       <button style={{ background: "none", border: "none" }}>
-        <span class="material-icons remove-icon">close</span>
+        <span className="material-icons remove-icon">close</span>
       </button>
     </div>
   );

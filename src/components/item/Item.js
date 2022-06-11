@@ -1,14 +1,14 @@
 import "./item.css";
 
-function Item(data) {
+function Item({ data }) {
   return (
     <div className="item-container">
-      <p className="item-text">This is a normal test task</p>
+      <p className="item-text">{data}</p>
       <button style={{ background: "none", border: "none" }}>
-        <span class="material-icons remove-icon">close</span>
+        <span className="material-icons remove-icon">close</span>
       </button>
       <button style={{ background: "none", border: "none" }}>
-        <span class="material-icons check-icon">done</span>
+        <span className="material-icons check-icon">done</span>
       </button>
     </div>
   );
