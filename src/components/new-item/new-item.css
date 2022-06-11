@@ -1,0 +1,31 @@
+.new-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 48px;
+  margin-bottom: 10px;
+  padding: 6px;
+  border-radius: 6px;
+
+  background-color: #2e2d33;
+}
+
+.new-item-input {
+  width: 100%;
+
+  border: 0;
+  outline: none;
+  background: none;
+
+  color: #f0f8ff;
+}
+
+.new-item-input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.plus-icon {
+  color: #f0f8ff;
+}

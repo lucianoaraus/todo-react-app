@@ -1,0 +1,31 @@
+.realized-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 48px;
+  padding: 6px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+
+  background-color: #47464d;
+}
+
+.realized-item-text {
+  width: 100%;
+
+  border: 0;
+  outline: none;
+  background: none;
+
+  font-weight: bold;
+  color: #38373d;
+}
+
+.remove-icon {
+  color: #d36f5f;
+}
+
+.check-icon {
+  color: #83d9aa;
+}

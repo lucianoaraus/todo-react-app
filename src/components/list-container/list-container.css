@@ -1,0 +1,9 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 740px;
+  height: 500px;
+
+  background-color: #3b3b46;
+}
