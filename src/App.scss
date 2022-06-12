@@ -1,6 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #40404c;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .app {

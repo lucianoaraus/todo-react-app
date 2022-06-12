@@ -1,6 +1,6 @@
-import "./app.css";
-import ListContainer from "./components/list-container/ListContainer";
-import { ListProvider } from "./components/context/ListContext";
+import "./App.scss";
+import ListContainer from "./components/ListContainer";
+import { ListProvider } from "./components/Context/ListContext";
 
 function App() {
   return (

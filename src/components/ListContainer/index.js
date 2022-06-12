@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import ListContext from "../context/ListContext";
+import ListContext from "../Context/ListContext";
 
-import NewItem from "../new-item/NewItem";
-import Item from "../item/Item";
-import RealizedItem from "../realized-item/RealizedItem";
+import NewItem from "../NewItem";
+import Item from "../Item";
+import RealizedItem from "../RealizedItem";
 
-import "./list-container.css";
+import "./styles.scss";
 
 function ListContainer() {
   const { tasks } = useContext(ListContext);

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 
-import ListContext from "../context/ListContext";
-import "./new-item.css";
+import ListContext from "../Context/ListContext";
+import "./styles.scss";
 
 function NewItem() {
   const { register, handleSubmit } = useForm();

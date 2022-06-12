@@ -17,6 +17,8 @@ const ListProvider = ({ children }) => {
     ]);
   };
 
+  
+
   const data = {
     tasks,
     addNewTask,

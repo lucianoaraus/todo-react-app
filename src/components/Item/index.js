@@ -1,4 +1,4 @@
-import "./item.css";
+import "./styles.scss";
 
 function Item({ data }) {
   return (

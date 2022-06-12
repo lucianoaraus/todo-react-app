@@ -1,4 +1,4 @@
-import "./realized-item.css";
+import "./styles.scss";
 
 function RealizedItem(data) {
   return (
