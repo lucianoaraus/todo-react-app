@@ -14,7 +14,7 @@ function ListContainer() {
     <div className="list-container">
       <NewItem />
       {tasks.map((task) => {
-        return <Item data={task.content} key={task.id} />;
+        return <Item data={task} key={task.id} />;
       })}
 
       <RealizedItem />

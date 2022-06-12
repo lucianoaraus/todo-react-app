@@ -18,8 +18,8 @@ function NewItem() {
       <input
         className="new-item-input"
         placeholder="Add new item"
-        maxlength="90"
-        /* Resolver el problema del largo del input para que no se salgan los caracteres del largo establecido */
+        maxLength="60"
+        /*TODO: si supera el largo establecido tirar error */
         {...register("data")}
       />
       <button

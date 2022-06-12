@@ -17,11 +17,15 @@ const ListProvider = ({ children }) => {
     ]);
   };
 
-  
+  const removeTask = (task) => {
+    const newList = tasks.filter(t => t.id != task.id)
+    setTasks(newList)
+  };
 
   const data = {
     tasks,
     addNewTask,
+    removeTask
   };
 
   return <ListContext.Provider value={data}>{children}</ListContext.Provider>;
