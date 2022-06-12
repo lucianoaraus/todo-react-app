@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 
-import ListContext from "../Context/ListContext";
+import ListContext from "../context/ListContext";
 import "./styles.scss";
 
 function NewItem() {

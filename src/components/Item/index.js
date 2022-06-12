@@ -1,16 +1,18 @@
 import { useContext } from "react";
-import ListContext from "../Context/ListContext";
+import ListContext from "../context/ListContext";
 import "./styles.scss";
 
 function Item({ data }) {
-  const {removeTask} = useContext(ListContext)
-  const {content} = data
-  
+  const { removeTask } = useContext(ListContext);
+  const { content } = data;
+
   return (
     <div className="item-container">
       <p className="item-text">{content}</p>
       <button
-        style={{ background: "none", border: "none" }} onClick={() => removeTask(data)}>
+        style={{ background: "none", border: "none" }}
+        onClick={() => removeTask(data)}
+      >
         <span className="material-icons remove-icon">close</span>
       </button>
       <button style={{ background: "none", border: "none" }}>

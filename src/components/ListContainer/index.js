@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ListContext from "../Context/ListContext";
+import ListContext from "../context/ListContext";
 
 import NewItem from "../NewItem";
 import Item from "../Item";
@@ -18,7 +18,10 @@ function ListContainer() {
       })}
 
       <RealizedItem />
-      <button style={{ background: "none", border: "none", color: "white" }} onClick={() => resetTasks()}>
+      <button
+        style={{ background: "none", border: "none", color: "white" }}
+        onClick={() => resetTasks()}
+      >
         reset progress
       </button>
     </div>

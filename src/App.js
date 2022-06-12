@@ -1,6 +1,6 @@
 import "./App.scss";
 import ListContainer from "./components/ListContainer";
-import { ListProvider } from "./components/Context/ListContext";
+import { ListProvider } from "./components/context/ListContext";
 
 function App() {
   return (
