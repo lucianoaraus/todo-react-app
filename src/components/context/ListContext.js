@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 
+
 const ListContext = createContext();
 
 const ListProvider = ({ children }) => {
@@ -22,10 +23,19 @@ const ListProvider = ({ children }) => {
     setTasks(newList)
   };
 
+  const handleSwitch = () => {
+
+  }
+
+  const resetTasks = () => {
+    setTasks([])
+  }
+
   const data = {
     tasks,
     addNewTask,
-    removeTask
+    removeTask,
+    resetTasks
   };
 
   return <ListContext.Provider value={data}>{children}</ListContext.Provider>;

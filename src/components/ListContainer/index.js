@@ -8,7 +8,7 @@ import RealizedItem from "../RealizedItem";
 import "./styles.scss";
 
 function ListContainer() {
-  const { tasks } = useContext(ListContext);
+  const { tasks, resetTasks } = useContext(ListContext);
 
   return (
     <div className="list-container">
@@ -18,7 +18,7 @@ function ListContainer() {
       })}
 
       <RealizedItem />
-      <button style={{ background: "none", border: "none", color: "white" }}>
+      <button style={{ background: "none", border: "none", color: "white" }} onClick={() => resetTasks()}>
         reset progress
       </button>
     </div>
