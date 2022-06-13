@@ -13,7 +13,6 @@ function ListContainer() {
   return (
     <div className="list-container">
       <NewItem />
-
       {tasks
         .filter((t) => !t.deleted)
         .map((task) => {
@@ -24,10 +23,7 @@ function ListContainer() {
           }
         })}
 
-      <button
-        style={{ background: "none", border: "none", color: "white" }}
-        onClick={() => resetTasks()}
-      >
+      <button className="reset-button" onClick={() => resetTasks()}>
         reset progress
       </button>
     </div>

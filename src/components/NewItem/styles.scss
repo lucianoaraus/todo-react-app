@@ -9,6 +9,7 @@
   border-radius: 6px;
 
   background-color: #2e2d33;
+  filter: drop-shadow(0px 2px 12px #00000026);
 }
 
 .new-item-input {
@@ -28,5 +29,6 @@
 }
 
 .plus-icon {
+  font-size: 32px;
   color: #f0f8ff;
 }
