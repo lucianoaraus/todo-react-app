@@ -10,7 +10,7 @@ function NewItem() {
 
   const onSubmit = (data, e) => {
     addNewTask(data);
-    e.target.reset();
+    e.nativeEvent.target.reset();
   };
 
   return (
@@ -20,6 +20,7 @@ function NewItem() {
         placeholder="New note"
         maxLength="50"
         autoComplete="off"
+        required
         onKeyPress={(e) => {
           e.key === "Enter" && e.preventDefault();
         }}
