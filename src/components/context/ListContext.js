@@ -1,6 +1,5 @@
 import { createContext, useState } from "react";
 
-
 const ListContext = createContext();
 
 const ListProvider = ({ children }) => {
@@ -14,28 +13,49 @@ const ListProvider = ({ children }) => {
         id: tasks.length,
         content: text,
         completed: false,
+        deleted: false,
       },
     ]);
   };
 
-  const removeTask = (task) => {
-    const newList = tasks.filter(t => t.id != task.id)
-    setTasks(newList)
+  const deleteTask = (task) => {
+    const newList = tasks.map((t) => {
+      if (t.id === task.id) {
+        return {
+          ...t,
+          deleted: true,
+        };
+      }
+      return t;
+    });
+    setTasks(newList);
   };
 
-  const handleSwitch = () => {
-
-  }
+  const completeTaskSwitch = (task) => {
+    const newList = tasks.map((t) => {
+      if (t.id === task.id) {
+        return {
+          ...t,
+          completed: true,
+        };
+      }
+      return t;
+    });
+    setTasks(newList);
+  };
 
   const resetTasks = () => {
-    setTasks([])
-  }
+    setTasks([]);
+  };
+
+  console.log("tasks desde context", tasks);
 
   const data = {
     tasks,
     addNewTask,
-    removeTask,
-    resetTasks
+    deleteTask,
+    resetTasks,
+    completeTaskSwitch,
   };
 
   return <ListContext.Provider value={data}>{children}</ListContext.Provider>;

@@ -13,11 +13,17 @@ function ListContainer() {
   return (
     <div className="list-container">
       <NewItem />
-      {tasks.map((task) => {
-        return <Item data={task} key={task.id} />;
-      })}
 
-      <RealizedItem />
+      {tasks
+        .filter((t) => !t.deleted)
+        .map((task) => {
+          if (!task.completed) {
+            return <Item data={task} key={task.id} />;
+          } else {
+            return <RealizedItem data={task} key={task.id} />;
+          }
+        })}
+
       <button
         style={{ background: "none", border: "none", color: "white" }}
         onClick={() => resetTasks()}
