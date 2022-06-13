@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 
+import AddIcon from "@mui/icons-material/Add";
 import ListContext from "../context/ListContext";
 import "./styles.scss";
 
@@ -31,7 +32,7 @@ function NewItem() {
         type="submit"
         value="submit"
       >
-        <span className="material-icons plus-icon">add</span>
+        <AddIcon style={{ color: "#f0f8ff", fontSize: "32px" }} />
       </button>
     </form>
   );

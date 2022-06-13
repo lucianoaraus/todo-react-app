@@ -1,5 +1,8 @@
 import { useContext } from "react";
 import ListContext from "../context/ListContext";
+import DoneIcon from "@mui/icons-material/Done";
+import CloseIcon from "@mui/icons-material/Close";
+
 import "./styles.scss";
 
 function Item({ data }) {
@@ -13,13 +16,13 @@ function Item({ data }) {
         style={{ background: "none", border: "none" }}
         onClick={() => deleteTask(data)}
       >
-        <span className="material-icons remove-icon">close</span>
+        <CloseIcon style={{ color: "#d36f5f", fontSize: "32px" }} />
       </button>
       <button
         style={{ background: "none", border: "none" }}
         onClick={() => completeTaskSwitch(data)}
       >
-        <span className="material-icons check-icon">done</span>
+        <DoneIcon style={{ color: "#83d9aa", fontSize: "32px" }} />
       </button>
     </div>
   );

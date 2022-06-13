@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import ListContext from "../context/ListContext";
+import CloseIcon from "@mui/icons-material/Close";
 import "./styles.scss";
 
 function RealizedItem({ data }) {
@@ -18,7 +19,7 @@ function RealizedItem({ data }) {
         style={{ background: "none", border: "none" }}
         onClick={() => deleteTask(data)}
       >
-        <span className="material-icons remove-icon">close</span>
+        <CloseIcon style={{ color: "#d36f5f", fontSize: "32px" }} />
       </button>
     </div>
   );
