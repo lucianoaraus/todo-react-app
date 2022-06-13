@@ -19,7 +19,7 @@ function NewItem() {
       <input
         className="new-item-input"
         placeholder="New note"
-        maxLength="50"
+        maxLength="25"
         autoComplete="off"
         required
         onKeyPress={(e) => {
