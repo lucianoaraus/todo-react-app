@@ -5,6 +5,7 @@
   width: 740px;
   height: 500px;
   margin-top: 48px;
+  padding: 0 18px;
 }
 
 .reset-button {
@@ -27,8 +28,17 @@
   border-radius: 6px;
   outline: none;
   background: #2e2d33;
-
   color: #f0f8ff;
   font-family: "Poppins", sans-serif;
   filter: drop-shadow(0px 2px 12px #00000026);
+
+  /* Arrow Padding Problem */
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../assets/white-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: calc(100% - 20px);
 }
