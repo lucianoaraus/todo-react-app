@@ -6,7 +6,6 @@ const ListProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
 
   const addNewTask = (cont) => {
-    console.log("data desde context", cont);
     const text = cont.data;
     setTasks([
       ...tasks,
